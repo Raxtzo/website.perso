@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: VCR-OSD;
+    src: url(./VCR_OSD_MONO_1.001.ttf);
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.parallax2 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.content {
+    padding: 50px;
+    background-color: #f1f1f1;
+}
+
+h1, h2 {
+    text-align: center;
+
+}
+
+p {
+    text-align: justify;
+}
+
+

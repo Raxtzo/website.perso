@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Treyer</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <style >
+        @font-face {
+            font-family: 'VCR-OSD';
+            src: url('VCR_OSD_MONO_1.001.ttf');
+        }
+        
+        h1, h2 {
+            text-align: center;
+        }
+
+        h1, h2, p {
+            color: #fff; 
+            background-color: rgb(58,55,80);
+            font-family: monospace;
+}
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .parallax {
+            background-image: url('./DMIB7UZUQAAdTkr.jpeg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(58,55,80);
+            padding-top: 15px;
+        }
+
+        .parallax2 {
+            background-image: url('./HS_HEADER_BOX_Background_f48c850ac96dd142405afccb0da6424a.png');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: larger;
+        }
+
+        .content {
+            padding: 50px;
+            background-color: rgba(48,42,57,255);
+        }
+
+        .text-block {
+            background-color: transparent; 
+            text-align: center;
+            margin-top: -600px;
+            position: relative;
+            margin-top: -200px; 
+        }
+
+        .content{
+            text-align: justify;
+            
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: rgb(58,55,80);
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="parallax">
+        <h1 id="header-text" onclick="updateHeaderText()"> <span class="auto-type"><font size="+3"></font></span> </h1>
+    </div>
+
+    <div class="content">
+        <h2 style="background-color: transparent;">Qui suis-je?</h2>
+        <p style="background-color: transparent;">Je suis Treyer, un passionné de technologie, de programmation et de design. J'aime explorer de nouvelles idées et créer des solutions innovantes.</p>
+    </div>
+
+    <div class="parallax2">
+        <div class="text-block">
+            <h2 style="background-color: transparent; font-family: monospace;" >Mes intérêts</h2>
+                <section style="font-family: monospace;">
+                    <p>Je m'intéresse à une variété de sujets, notamment:</p>
+                    <ul>
+                        <li>La programmation informatique</li>
+                        <li>La course</li>
+                        <li>La lécture</li>
+                        <li>L'unihockey</li>
+                        <li>Le piano</li>
+                    </ul>
+                </section>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2 style="background-color: transparent;">Contact</h2>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <textarea name="message" placeholder="Votre message" required></textarea>
+                <input style="text-align:center ;" type="submit" value="Envoyer">
+            </form>
+        </div>
+    </div>
+    
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed (".auto-type", {
+            strings: ["Bienvenue ", "Willkommen ", "Benvenuti", "Welcome  ", "Bienvenidas "],
+            typeSpeed: 95,
+            backSpeed: 140,
+            loop: true
+        })
+    </script>
+</body>
+</html>
